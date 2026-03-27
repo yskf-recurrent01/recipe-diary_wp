@@ -39,9 +39,22 @@
   </header>
   <main>
     <div class="breadcrumbs-wrapper wrapper">
-      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-        <span><a href="./index.html">Home</a></span> &gt; <span><a href="./news.html">お知らせ</a></span> &gt; <span aria-current="page">春の新作レシピを3点公開しました。</span>
-      </div>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol typeof="BreadcrumbList" vocab="https://schema.org/">
+          <li property="itemListElement" typeof="ListItem">
+            <a property="item" typeof="WebPage" href="./index.html"><span property="name">Home</span></a>
+            <meta property="position" content="1">
+          </li>
+          <li property="itemListElement" typeof="ListItem">
+            <a property="item" typeof="WebPage" href="./news.html"><span property="name">お知らせ</span></a>
+            <meta property="position" content="2">
+          </li>
+          <li property="itemListElement" typeof="ListItem">
+            <span property="name" aria-current="page">春の新作レシピを3点公開しました。</span>
+            <meta property="position" content="3">
+          </li>
+        </ol>
+      </nav>
     </div>
     <div class="wrapper">
       <article class="news-detail">
